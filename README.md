@@ -43,7 +43,7 @@ Aplicación de inventario de empleados vacunados.
   ![image](https://user-images.githubusercontent.com/23529255/173405823-8d758075-b32e-4bb0-80d3-d6ab6b1d620f.png)
   
   
-  2.3 Y finalmente con este token de acceso podemos hacer uso del los endpoints especificados en la documentación.
+  2.3 Y finalmente con este token de acceso podemos hacer uso del los endpoints especificados en la documentación (Colección adjunta ).
   
   ![image](https://user-images.githubusercontent.com/23529255/173407270-43d68c81-2669-4117-9702-f012ac632a16.png)
 

@@ -1,0 +1,255 @@
+{
+	"id": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+	"name": "Vacunacion",
+	"description": "",
+	"order": [
+		"5a3ce6ad-bb51-f396-dae5-0447af457fd0",
+		"53dc54af-7dfc-bb13-992b-5cd8b04ce88e",
+		"3f3e012e-2f35-8153-e73d-f455e8bf0fce",
+		"30b8d841-e590-6712-2bf9-2d53834a79ce",
+		"6933ce2d-b506-7eba-26d6-5f8a1b8036f9",
+		"d1f0f081-de7f-627f-1a14-c9d5d4372bd8",
+		"8c974e16-6f7d-4b28-6efc-853a337ac3e1"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1654935471275,
+	"owner": "12165801",
+	"public": false,
+	"requests": [
+		{
+			"id": "30b8d841-e590-6712-2bf9-2d53834a79ce",
+			"headers": "",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/empleados/listarporfecha?desde=2021-01-01&hasta=2023-01-01&authorization=Bearer c0ba3b94-e9be-47ee-b426-9f97e777ec05",
+			"queryParams": [
+				{
+					"key": "desde",
+					"value": "2021-01-01",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2023-01-01",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "authorization",
+					"value": "Bearer c0ba3b94-e9be-47ee-b426-9f97e777ec05",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655136501619,
+			"name": "Listar Empleados",
+			"description": "",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"responses": []
+		},
+		{
+			"id": "3f3e012e-2f35-8153-e73d-f455e8bf0fce",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/empleados/37",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655074443455,
+			"name": "Eliminar Empleados",
+			"description": "",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "53dc54af-7dfc-bb13-992b-5cd8b04ce88e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/empleados",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655137210571,
+			"name": "Actualizar Empleados",
+			"description": "",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\" : \"1\",\n\t\"vacunado\" : true,\n\t\"vacunas\" : \n}"
+		},
+		{
+			"id": "5a3ce6ad-bb51-f396-dae5-0447af457fd0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/empleados",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655136497743,
+			"name": "Empleados",
+			"description": "",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": 49,\n\t\"cedula\" : \"1303831522\",\n\t\"nombres\" : \"Juán ANDRÉS\",\n\t\"apellidos\" : \"Perez ÑANDÚ\",\n\t\"correo_electronico\" : \"amontenegro@s\",\n\t\"vacunas\" : \n\t\t[\n\t\t\t{\n\t\t\t\t\"id\":10,\n\t\t\t\t\"fecha_vacunacion\": \"2024-01-03\",\n\t\t\t\t\"numero_dosis\": 1,\n\t\t\t\t\"tipo\": {\n\t\t\t\t\t\"id\": 2\n\t\t\t\t}\n\t\t\t}\n\t\t]\t\n}"
+		},
+		{
+			"id": "6933ce2d-b506-7eba-26d6-5f8a1b8036f9",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/tipovacunas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar Tipo vacunas",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1655053584216,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8c974e16-6f7d-4b28-6efc-853a337ac3e1",
+			"headers": "Authorization: Basic Y2xpZW50YXBwOjEyMzQ1Ng==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2xpZW50YXBwOjEyMzQ1Ng==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "authorization_code",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "code",
+					"value": "lY9TE2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "http://localhost:8080/login",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655137205877,
+			"name": "Obtener token",
+			"description": "",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"responses": []
+		},
+		{
+			"id": "d1f0f081-de7f-627f-1a14-c9d5d4372bd8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/tipovacunas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d49ec612-7d39-fa6c-fa28-b1e2f7fdf6a9",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Insertar Tipo vacunas",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1655054505904,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nombre\":\"Moderna\"\n}"
+		}
+	]
+}
