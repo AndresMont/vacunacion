@@ -16,6 +16,12 @@ Aplicación de inventario de empleados vacunados.
   
   `pg_restore -p 5432 -U postgres -d vacunacion -v -O "model/vacunacion.dmp"`
   
+  Esta restauración también la podemos hacer por la interfaz de PgAdmin
+
+  ![image](https://user-images.githubusercontent.com/23529255/173433368-927de1a9-2c49-4741-9ed6-2670b8d46a8b.png)
+  ![image](https://user-images.githubusercontent.com/23529255/173433193-115db456-a9dd-4aaa-afdd-0327044d6f05.png)  
+
+  
   1.2 Ingresar al directorio del ambiente mediante línea de comandos e iniciar la aplicación mediante el comando:
   
   `mvnw.cmd spring-boot:run`
@@ -24,19 +30,24 @@ Aplicación de inventario de empleados vacunados.
   
 # 2. Ejecución
 
-  2.1 Obtener el código de acceso en la siguiente URL
+  2.1 Obtener el código de acceso en la siguiente URL, accedemos con el usuario y contraseña
   
   http://localhost:8080/oauth/authorize?client_id=krugerclient&response_type=code&scope=read_profile_info
   
-  usuario: krugeradmin
-  pass: 123456
+  * usuario: krugeradmin
+  * pass: 123456
+  
+  
+  ![image](https://user-images.githubusercontent.com/23529255/173430623-7ccf4e6c-ff40-4cc1-816d-ed2afacc4fe0.png)
+
+  Presionamos en "Approve" para obtener el código de acceso
   
   ![image](https://user-images.githubusercontent.com/23529255/173401101-3300c0e3-6b1e-4218-9ba3-88f9a7b42877.png)
   
   2.2 Mediante este código y el usuario y contraseña del cliente podemos obtener el token de acceso:
   
-  usuario: krugerclient
-  pass: 123456
+  * usuario: krugerclient
+  * pass: 123456
   
   ![image](https://user-images.githubusercontent.com/23529255/173407179-72c0257b-3968-4643-923f-84057966afba.png)
   
